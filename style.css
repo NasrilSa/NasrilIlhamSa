@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+body {
+  scroll-behavior: smooth;
+}
+.container {
+  font-family: "roboto", sans-serif;
+  scroll-behavior: smooth;
+  padding: 8rem 0rem;
+}
+.container .hero {
+  text-align: center;
+}
+.container .hero img {
+  border-radius: 50px;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+.container .hero h3 {
+  margin: 0 auto;
+  margin-top: 1rem;
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 6s steps(70), cursor 0.4s step-end infinite alternate;
+}
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+.container .hero .big-text {
+  font-size: 40px;
+  text-align: center;
+}
+.container .hero .big-text span {
+  background-image: url("assets/text-highlight.png");
+  background-position: 50% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.container .hero .big-text .school {
+  color: #0070cd;
+  background-image: url("assets/text-highlight.png");
+  background-position: 50% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.container .hero .contact {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+.container .hero .contact a {
+  text-decoration: none;
+}
+/* button {
+  position: relative;
+  width: 130px;
+  height: 35px;
+  border-radius: 30px;
+  background-color: white;
+  border: 1px #0c77be solid;
+  overflow: hidden;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+.text1 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 22%;
+}
+
+.text2 {
+  position: absolute;
+  top: 25%;
+  left: -50px;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s;
+}
+
+.icon::before {
+  position: absolute;
+  left: -100px;
+  top: 0;
+  z-index: -1;
+  content: "";
+  width: 130px;
+  height: 33px;
+  border-radius: 30px;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+button:hover .icon {
+  transform: translateX(96px);
+  transition: transform 0.5s;
+}
+
+button:hover .text2 {
+  transform: translateX(100px);
+  transition: transform 0.6s;
+}
+
+button:active {
+  transform: scale(1.03);
+}*/
+.button {
+  display: flex;
+  background-color: rgb(24, 23, 23);
+  color: #ffffff;
+  padding: 0.5rem 1.4rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 0.5rem;
+  gap: 0.75rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: 0.6s ease;
+  margin: 0 auto;
+}
+
+.button svg {
+  height: 30px;
+}
+
+.button:hover {
+  box-shadow: none;
+}
+.container .about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container .about .text {
+  background-image: url("assets/text-highlight.png");
+  background-position: 50% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.about .text h3 {
+  background-image: url("assets/text-highlight.png");
+  background-position: 50% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container .about img {
+  width: 2000px;
+
+  background-image: url("assets/text-highlight.png");
+  background-position: 50% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.portfolio {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 7rem;
+}
+.portfolio h2 {
+  background-image: url("assets/text-highlight.png");
+  background-position: 50% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.portfolio .portfolio-title {
+  background-image: url("assets/text-highlight.png");
+  background-position: 50% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.portfolio .square {
+  margin-top: 2rem;
+  width: 400px;
+  height: 200px;
+  background-color: #4395ec;
+  opacity: 0.8;
+  color: #fff;
+  padding-top: 50px;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #4395ec 40px
+    ),
+    repeating-linear-gradient(#15bbfc55, #15bbfc);
+}
+.portfolio #last {
+  margin-bottom: 6rem;
+}
+footer {
+  text-align: center;
+}
+footer .N {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+
+  border-radius: 50px;
+  padding: 10px 15px;
+  color: #fff;
+  background: rgb(0, 187, 255);
+  background: radial-gradient(
+    circle,
+    rgba(0, 187, 255, 1) 0%,
+    rgba(1, 119, 235, 1) 29%,
+    rgba(0, 150, 255, 1) 100%
+  );
+  -webkit-box-shadow: 10px 11px 6px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 11px 6px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 11px 6px -2px rgba(0, 0, 0, 0.75);
+}
+footer .footer-text {
+  margin-top: 2rem;
+  font-size: 50px;
+}
+footer .footer-title {
+  font-size: 20px;
+}
+footer .social-media .sosmed {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  /* color: #fff; */
+  background: #0070cd;
+  padding: 10px;
+  border-radius: 50px;
+}
+@media (max-width: 758px) {
+  .container button {
+    margin-bottom: 6rem;
+  }
+  .container .about {
+    display: inline;
+  }
+  .container .about img {
+    margin: 0 auto;
+    display: block;
+    width: 300px;
+  }
+}

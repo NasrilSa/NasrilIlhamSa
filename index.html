@@ -12,16 +12,19 @@
     />
     <!-- feather -->
     <script src="https://unpkg.com/feather-icons"></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Document</title>
   </head>
   <body>
     <div class="container">
       <section class="hero">
-        <img src="assets/my foto-modified.png" alt="" />
+        <img src="assets/my foto-modified.png" alt="" data-aos="fade-down" />
         <h3>Hey👋,I'm Nasril Ilham Saputra</h3>
-        <h1 class="big-text">
-          I'm <span>Software</span> Engineering student at
-          <span class="school">SMKN 4 Bojonegoro</span>
+        <h1 class="big-text" data-aos="fade-right">
+          I'm <span>Software</span> Engineering student and
+          <span class="school">Web Development</span>
         </h1>
         <p class="contact">Contact me <a href="">Nasrililhamsa@gmail.com</a></p>
         <!-- <a href="https://instagram.com/naasrlilhm_" class="botton">
@@ -85,10 +88,10 @@
         </button>
       </section>
       <section class="about">
-        <img src="assets/about-image.png" alt="" />
+        <img src="assets/about-image.png" alt="" data-aos="fade-right" />
         <div class="text" style="display: row">
           <h3>Bit About Me</h3>
-          <p class="about">
+          <p class="about" data-aos="fade-up">
             As a teenager deeply passionate about coding, particularly Front End
             Development, I thrive on the opportunity to merge creativity with
             functionality. Each line of code I write is a canvas for me to
@@ -133,6 +136,10 @@
 
     <script>
       feather.replace();
+    </script>
+
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

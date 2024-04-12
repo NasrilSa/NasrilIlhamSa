@@ -9,7 +9,7 @@ body {
 .container {
   font-family: "roboto", sans-serif;
   scroll-behavior: smooth;
-  padding: 8rem 0rem;
+  padding: 8rem 0rem 0rem 0rem;
 }
 .container .hero {
   text-align: center;
@@ -64,7 +64,6 @@ body {
 }
 
 .button {
-  text-decoration: none;
   display: flex;
   background-color: rgb(24, 23, 23);
   color: #ffffff;
@@ -93,6 +92,9 @@ body {
 
 .button:hover {
   box-shadow: none;
+}
+.hero a {
+  text-decoration: none;
 }
 .container .about {
   display: flex;
@@ -128,8 +130,14 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
+.bg-blue{
+  background-color: #192d3e;
+  color: #fff;
+  border-top-left-radius: 90px;
+}
 .tools {
   margin-top: 2rem;
+  
   
 }
 .tools h2{
@@ -137,10 +145,10 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: url("assets/text-highlight.png");
+  /* background-image: url("assets/text-highlight.png");
   background-position: 50% 100%;
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   margin: 0 auto;
 }
 .tools p{
@@ -159,18 +167,19 @@ body {
   width: 80%;
   margin: 0 auto;
   margin-top: 4rem;
+  
 }
 .portfolio h2 {
-  background-image: url("assets/text-highlight.png");
+  /* background-image: url("assets/text-highlight.png");
   background-position: 50% 100%;
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 .portfolio .portfolio-title {
-  background-image: url("assets/text-highlight.png");
+  /* background-image: url("assets/text-highlight.png");
   background-position: 50% 100%;
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 .portfolio .square {
   margin-top: 2rem;
@@ -192,6 +201,7 @@ body {
 }
 footer {
   text-align: center;
+
 }
 footer .N {
   display: inline-block;
@@ -228,7 +238,7 @@ footer .social-media .sosmed {
   background: #0070cd;
   padding: 10px;
   border-radius: 50px;
-  text-decoration: none;
+  
 }
 @media (max-width: 758px) {
   .container button {

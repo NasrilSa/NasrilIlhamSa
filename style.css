@@ -43,19 +43,16 @@ body {
 .container .hero .big-text {
   font-size: 40px;
   text-align: center;
+  
 }
-.container .hero .big-text span {
-  background-image: url("assets/text-highlight.png");
-  background-position: 50% 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.container .hero .big-text .school {
+
+.container .hero .big-text .blue {
   color: #0070cd;
   background-image: url("assets/text-highlight.png");
   background-position: 50% 100%;
   background-size: contain;
   background-repeat: no-repeat;
+  
 }
 .container .hero .contact {
   text-align: center;
@@ -65,73 +62,9 @@ body {
 .container .hero .contact a {
   text-decoration: none;
 }
-/* button {
-  position: relative;
-  width: 130px;
-  height: 35px;
-  border-radius: 30px;
-  background-color: white;
-  border: 1px #0c77be solid;
-  overflow: hidden;
-  margin-top: 1rem;
-  margin-bottom: 5rem;
-}
 
-.text1 {
-  font-size: 15px;
-  font-weight: 600;
-  margin-left: 22%;
-}
-
-.text2 {
-  position: absolute;
-  top: 25%;
-  left: -50px;
-  font-weight: 700;
-  font-size: 14px;
-  color: white;
-}
-
-.icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: transform 0.5s;
-}
-
-.icon::before {
-  position: absolute;
-  left: -100px;
-  top: 0;
-  z-index: -1;
-  content: "";
-  width: 130px;
-  height: 33px;
-  border-radius: 30px;
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
-}
-
-button:hover .icon {
-  transform: translateX(96px);
-  transition: transform 0.5s;
-}
-
-button:hover .text2 {
-  transform: translateX(100px);
-  transition: transform 0.6s;
-}
-
-button:active {
-  transform: scale(1.03);
-}*/
 .button {
+  text-decoration: none;
   display: flex;
   background-color: rgb(24, 23, 23);
   color: #ffffff;
@@ -150,6 +83,7 @@ button:active {
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
   transition: 0.6s ease;
   margin: 0 auto;
+  
 
 }
 
@@ -179,7 +113,7 @@ button:active {
   
   
 }
-.about .text h3 {
+.about .text h2 {
   background-image: url("assets/text-highlight.png");
   background-position: 50% 100%;
   background-size: contain;
@@ -199,7 +133,6 @@ button:active {
   
 }
 .tools h2{
- 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -211,10 +144,13 @@ button:active {
   margin: 0 auto;
 }
 .tools p{
-  padding: 2rem;
+  padding:2rem ;
   margin-top: 1rem;
-  gap: 2rem;
   
+  
+}
+.tools p a{
+
 }
 .portfolio {
   align-items: center;

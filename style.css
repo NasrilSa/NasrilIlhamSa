@@ -150,6 +150,7 @@ button:active {
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
   transition: 0.6s ease;
   margin: 0 auto;
+
 }
 
 .button svg {
@@ -166,13 +167,17 @@ button:active {
   text-align: center;
   width: 80%;
   margin: 0 auto;
+  
 }
 
 .container .about .text {
+  padding: 2rem;
   background-image: url("assets/text-highlight.png");
   background-position: 50% 100%;
   background-size: contain;
   background-repeat: no-repeat;
+  
+  
 }
 .about .text h3 {
   background-image: url("assets/text-highlight.png");
@@ -189,13 +194,35 @@ button:active {
   background-size: contain;
   background-repeat: no-repeat;
 }
+.tools {
+  margin-top: 2rem;
+  
+}
+.tools h2{
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url("assets/text-highlight.png");
+  background-position: 50% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+.tools p{
+  padding: 2rem;
+  margin-top: 1rem;
+  gap: 2rem;
+  
+}
 .portfolio {
   align-items: center;
   justify-content: center;
   text-align: center;
   width: 80%;
   margin: 0 auto;
-  margin-top: 7rem;
+  margin-top: 4rem;
 }
 .portfolio h2 {
   background-image: url("assets/text-highlight.png");
@@ -261,10 +288,11 @@ footer .footer-title {
 footer .social-media .sosmed {
   margin-top: 3rem;
   margin-bottom: 2rem;
-  /* color: #fff; */
+  color: #fff; 
   background: #0070cd;
   padding: 10px;
   border-radius: 50px;
+  text-decoration: none;
 }
 @media (max-width: 758px) {
   .container button {

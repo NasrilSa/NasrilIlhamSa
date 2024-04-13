@@ -4,10 +4,10 @@
   overflow-x: hidden;
 }
 body {
-  background-color: #fff;
   scroll-behavior: smooth;
 }
 .container {
+  background-color: #fff !important;
   font-family: "roboto", sans-serif;
   scroll-behavior: smooth;
   padding: 0rem 0rem 0rem 0rem;
@@ -45,7 +45,6 @@ body {
 .container .hero .big-text {
   font-size: 40px;
   text-align: center;
-  
 }
 
 .container .hero .big-text .blue {
@@ -54,7 +53,6 @@ body {
   background-position: 50% 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  
 }
 .container .hero .contact {
   text-align: center;
@@ -84,8 +82,6 @@ body {
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
   transition: 0.6s ease;
   margin: 0 auto;
-  
-
 }
 
 .button svg {
@@ -105,7 +101,6 @@ body {
   text-align: center;
   width: 80%;
   margin: 0 auto;
-  
 }
 
 .container .about .text {
@@ -114,8 +109,6 @@ body {
   background-position: 50% 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  
-  
 }
 .about .text h2 {
   background-image: url("assets/text-highlight.png");
@@ -124,22 +117,22 @@ body {
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-align-items: center;
+  align-items: center;
 }
-.container .about .text h2 span   .rotating-image {
+.container .about .text h2 span .rotating-image {
   margin-bottom: 30px;
-    width: 35px;
-    animation: rotate 2s linear infinite;
-  }
+  width: 35px;
+  animation: rotate 2s linear infinite;
+}
 
-  @keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
   }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 .container .about img {
   width: 2000px;
@@ -149,17 +142,15 @@ align-items: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
-.bg-blue{
+.bg-blue {
   background-color: #192d3e;
   color: #fff;
   border-top-left-radius: 90px;
 }
 .tools {
   margin-top: 2rem;
-  
-  
 }
-.tools h2{
+.tools h2 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -170,16 +161,21 @@ align-items: center;
   background-repeat: no-repeat; */
   margin: 0 auto;
 }
-.tools p{
-  padding:1rem 2rem ;
+.tools p {
+  padding: 1rem 2rem;
   margin-top: 0rem;
   margin-left: 1rem;
-  
-  
+  gap: 2rem;
 }
-.tools p a{
-
-}
+/* .tools .android {
+  margin: 1rem;
+  background-color: #fff;
+  width: 70px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+} */
 .portfolio {
   align-items: center;
   justify-content: center;
@@ -187,25 +183,23 @@ align-items: center;
   width: 80%;
   margin: 0 auto;
   margin-top: 2rem;
-  
 }
-.portfolio h2 span   .rotating-image {
+.portfolio h2 {
+}
+.portfolio h2 span .rotating-image {
   margin-bottom: 0.5rem;
-    width: 35px;
-    animation: rotate 2s linear infinite;
+  width: 35px;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
   }
-
-  @keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
   }
-
-
-
+}
 .portfolio .portfolio-title {
   /* background-image: url("assets/text-highlight.png");
   background-position: 50% 100%;
@@ -213,27 +207,22 @@ align-items: center;
   background-repeat: no-repeat; */
   margin-top: 0.5rem;
 }
+
 .portfolio .square {
   margin-top: 2rem;
   width: 400px;
   height: 200px;
   background-color: #4395ec;
-  opacity: 0.8;
   color: #fff;
-  padding-top: 50px;
-  background-image: repeating-radial-gradient(
-      circle at 0 0,
-      transparent 0,
-      #4395ec 40px
-    ),
-    repeating-linear-gradient(#15bbfc55, #15bbfc);
+  padding: 15px;
+  border-radius: 20px;
+  background-color: #15bbfc55;
 }
 .portfolio #last {
   margin-bottom: 6rem;
 }
 footer {
   text-align: center;
-
 }
 footer .N {
   display: inline-block;
@@ -266,11 +255,22 @@ footer .footer-title {
 footer .social-media .sosmed {
   margin-top: 3rem;
   margin-bottom: 2rem;
-  color: #fff; 
+  color: #fff;
   background: #0070cd;
   padding: 10px;
   border-radius: 50px;
-  
+}
+footer .copyright {
+  margin-bottom: 1rem;
+}
+@media (min-width: 1280px) {
+  .container .hero img {
+    padding-top: 7rem;
+  }
+  .portfolio .portfolio-image-wrap {
+    display: flex;
+    gap: 2rem;
+  }
 }
 @media (max-width: 758px) {
   .container button {
@@ -283,5 +283,9 @@ footer .social-media .sosmed {
     margin: 0 auto;
     display: block;
     width: 300px;
+  }
+  footer .footer-title {
+    margin: 0rem 1rem;
+    font-size: 15px;
   }
 }

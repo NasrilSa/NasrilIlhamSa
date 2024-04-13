@@ -120,7 +120,24 @@ body {
   background-position: 50% 100%;
   background-size: contain;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+align-items: center;
 }
+.container .about .text h2 span   .rotating-image {
+  margin-bottom: 30px;
+    width: 35px;
+    animation: rotate 2s linear infinite;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
 .container .about img {
   width: 2000px;
@@ -152,8 +169,9 @@ body {
   margin: 0 auto;
 }
 .tools p{
-  padding:2rem ;
-  margin-top: 1rem;
+  padding:1rem 2rem ;
+  margin-top: 0rem;
+  margin-left: 1rem;
   
   
 }
@@ -166,20 +184,32 @@ body {
   text-align: center;
   width: 80%;
   margin: 0 auto;
-  margin-top: 4rem;
+  margin-top: 2rem;
   
 }
-.portfolio h2 {
-  /* background-image: url("assets/text-highlight.png");
-  background-position: 50% 100%;
-  background-size: contain;
-  background-repeat: no-repeat; */
-}
+.portfolio h2 span   .rotating-image {
+  margin-bottom: 0.5rem;
+    width: 35px;
+    animation: rotate 2s linear infinite;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
 .portfolio .portfolio-title {
   /* background-image: url("assets/text-highlight.png");
   background-position: 50% 100%;
   background-size: contain;
   background-repeat: no-repeat; */
+  margin-top: 0.5rem;
 }
 .portfolio .square {
   margin-top: 2rem;

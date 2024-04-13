@@ -10,7 +10,7 @@ body {
 .container {
   font-family: "roboto", sans-serif;
   scroll-behavior: smooth;
-  padding: 8rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
 }
 .container .hero {
   text-align: center;
@@ -20,6 +20,7 @@ body {
   width: 200px;
   display: block;
   margin: 0 auto;
+  padding-top: 8rem;
 }
 .container .hero h3 {
   margin: 0 auto;

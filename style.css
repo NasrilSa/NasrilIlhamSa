@@ -121,6 +121,19 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
+.about .text h2 span   .rotating-image {
+    width: 40px;
+    animation: rotate 2s linear infinite;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
 .container .about img {
   width: 2000px;

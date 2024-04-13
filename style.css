@@ -4,6 +4,7 @@
   overflow-x: hidden;
 }
 body {
+  background-color: #fff;
   scroll-behavior: smooth;
 }
 .container {

@@ -208,7 +208,7 @@ body {
   margin-top: 0.5rem;
 }
 
-.portfolio .square {
+.portfolio .portfolio-image {
   margin-top: 2rem;
   width: 400px;
   height: 200px;
@@ -283,6 +283,10 @@ footer .copyright {
     margin: 0 auto;
     display: block;
     width: 300px;
+  }
+  .portfolio .portfolio-image {
+    width: 300px;
+    height: 165px;
   }
   footer .footer-title {
     margin: 0rem 1rem;

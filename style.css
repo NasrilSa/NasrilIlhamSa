@@ -1,3 +1,6 @@
+:root {
+  --blue: #192d3e;
+}
 * {
   margin: 0;
   padding: 0;
@@ -143,7 +146,7 @@ body {
   background-repeat: no-repeat;
 }
 .bg-blue {
-  background-color: #192d3e;
+  background-color: var(--blue);
   color: #fff;
   border-top-left-radius: 90px;
 }
@@ -167,15 +170,22 @@ body {
   margin-left: 1rem;
   gap: 2rem;
 }
-/* .tools .android {
-  margin: 1rem;
-  background-color: #fff;
-  width: 70px;
-  height: 70px;
+.tools .square {
+  border-radius: 10px;
+  border: 0.5px solid #000;
+  margin: 2rem;
+  background-color: var(--blue);
+  width: 100px;
+  height: 100px;
   justify-content: center;
   align-items: center;
-  display: flex;
-} */
+  display: inline-flex;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease;
+}
+.tools .square:hover {
+  box-shadow: 0px 0px 20px 0px rgba(0, 157, 255, 0.7);
+}
 .portfolio {
   align-items: center;
   justify-content: center;
@@ -284,6 +294,11 @@ footer .copyright {
     display: block;
     width: 300px;
   }
+  .tools .square {
+    width: 70px;
+    height: 70px;
+    margin: 1rem;
+  }
   .portfolio .portfolio-image {
     width: 260px;
     height: 165px;
@@ -291,5 +306,8 @@ footer .copyright {
   footer .footer-title {
     margin: 0rem 1rem;
     font-size: 15px;
+  }
+  footer .copyright {
+    font-size: 12px;
   }
 }

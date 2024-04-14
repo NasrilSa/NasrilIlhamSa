@@ -309,5 +309,6 @@ footer .copyright {
   }
   footer .copyright {
     font-size: 12px;
+    padding: 10px;
   }
 }

@@ -108,10 +108,6 @@ body {
 
 .container .about .text {
   padding: 2rem;
-  background-image: url("assets/text-highlight.png");
-  background-position: 50% 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 .about .text h2 {
   background-image: url("assets/text-highlight.png");
@@ -158,11 +154,15 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* background-image: url("assets/text-highlight.png");
-  background-position: 50% 100%;
-  background-size: contain;
-  background-repeat: no-repeat; */
+  background-image: url("assets/shape-light.svg");
+  background-position: 35% 60%;
+  background-size: 30% auto;
+  background-repeat: no-repeat;
   margin: 0 auto;
+}
+.tools h2 span img {
+  margin-bottom: 1.7rem;
+  width: 35px;
 }
 .tools p {
   padding: 1rem 2rem;
@@ -186,7 +186,7 @@ body {
 }
 .tools .square:hover {
   box-shadow: 0px 0px 20px 0px rgba(0, 157, 255, 0.7);
-  transform: rotate(20deg) scale(1.2);
+  transform: rotate(10deg) scale(1.2);
 }
 .portfolio {
   align-items: center;
@@ -197,6 +197,10 @@ body {
   margin-top: 2rem;
 }
 .portfolio h2 {
+  background-image: url("assets/shape-light.svg");
+  background-position: 30% 100%;
+  background-size: 40% auto;
+  background-repeat: no-repeat;
 }
 .portfolio h2 span .rotating-image {
   margin-bottom: 0.5rem;
@@ -274,6 +278,17 @@ footer .social-media .sosmed {
 }
 footer .copyright {
   margin-bottom: 1rem;
+}
+footer .copyright .love {
+  animation: throbbing 0.5s infinite alternate;
+}
+@keyframes throbbing {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
 }
 @media (min-width: 1280px) {
   .container .hero img {

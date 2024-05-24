@@ -330,7 +330,7 @@ footer .copyright .love {
     height: 70px;
     margin: 0.7rem;
   }
-  .portfolio .portfolio-image {
+  .portfolio .portfolio-image-wrap .portfolio-image {
     width: 260px;
     height: 165px;
   }
